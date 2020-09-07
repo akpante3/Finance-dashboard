@@ -1,0 +1,23 @@
+.tag {
+    padding:2px 4px;
+    border-radius: 3px;
+    font-size: 11px;
+    width: 70px;
+    text-align: center;
+    &--green {
+        background: #D8E7D6;
+        color: #27AE60;
+    }
+    &--frozen {
+        color: #00C2FF;
+        background: #E8F2FB;
+    }
+    &--orange {
+        color: #F5A623;
+        background: rgba(245, 166, 35, 0.179008);
+    }
+    &--red {
+        color: #D01D1B;
+        background: rgb(240, 190, 189);       
+    }
+}

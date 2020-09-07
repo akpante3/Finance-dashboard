@@ -1,0 +1,29 @@
+.receipt-upload {
+    width: 100%;
+    padding: 18px 26px;
+    background: #FCFCFC;
+    border: 1px dashed #C4CDD5;
+    border-radius: 2.4px;
+    display: flex;
+    &__icon {
+        margin-right: 30px; 
+    }
+    &__button {
+        margin-top: 7px;
+    }
+}
+.receipt-upload-item {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 15px;
+   &__name {
+       font-size: 14px;
+       font-weight: 500;
+       word-break: break-all;
+   }
+   &__icon {
+       cursor: pointer;
+       font-size: 16px;
+       margin-right: 9px;
+   }
+}

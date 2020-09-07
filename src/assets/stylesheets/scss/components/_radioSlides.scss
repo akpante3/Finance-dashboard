@@ -1,0 +1,41 @@
+.radio__slide {
+    position: relative;
+    &__handle {
+        width: 44px;
+        height: 26px;
+        display: block;
+        cursor: pointer;
+        &::before {
+            width: 44px;
+            height: 26px;
+            display: block;
+            border-radius: 13.6px;
+            background-color: rgba(#8791a0, 0.33);
+            content: ' ';
+        }
+        &::after {
+            position: absolute;
+            border-radius: 13.6px;
+            width: 25px;
+            height: 25px;
+            top: 0px;
+            left: 0;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.22);
+            background-color: #ffffff;
+            content: ' ';
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &__input {
+        display: none;
+        &:checked + .radio__slide__handle {
+            &::before {
+                background-color: #5db680;;
+            }
+            &::after {
+                left: 20px;
+                box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.22);
+            }
+        }
+    }
+}

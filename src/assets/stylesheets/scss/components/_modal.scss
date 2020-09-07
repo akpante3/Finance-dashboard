@@ -1,0 +1,19 @@
+.modal {
+    .modal-content {
+        background: #FFFFFF;
+        box-shadow: 0px 2px 16px rgba(33, 43, 54, 0.08), 0px 1px 3px rgba(64, 66, 69, 0.12), 0px 0px 0px rgba(6, 44, 82, 0.1), 0px 31px 41px rgba(33, 43, 54, 0.2);
+        border-radius: 5px;
+        max-width: 429px;
+    }
+    .modal-header, .modal-body, .modal-footer {
+        padding: 10px 15px;
+        @media (min-width: $breaking-point) {
+            padding: 20px 31px;
+        }
+    }
+    .modal-body__item {
+        &:not(:first-child) {
+            margin-top: 25px;
+        }
+    }
+}

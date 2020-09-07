@@ -1,0 +1,106 @@
+.dashboard-settings {
+    width: 95%;
+    margin: 0 auto;
+    @media (min-width: $breaking-point) {
+        margin: 0px; 
+    }
+    &__header {
+        // display: ;
+        // @media (min-width: $breaking-point) {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            &__text {
+                font-size: 24px;
+                display: block;
+                font-family: $app-font-bold;
+            }
+        // }
+    }
+    &__card {
+        min-height: 500px;
+        &__header {
+            width: 100%;
+            display: flex;
+            padding: 25px 5px 0px;
+            border-bottom: 1px solid rgba(224, 224, 224, 0.674904);
+            @media (min-width: $breaking-point) {
+                padding: 25px 37px 0px;               
+            }
+            &__link {
+                padding: 5px 10px;
+                margin-right: 10px;
+                border-bottom : 3px solid none;
+                cursor: pointer;
+                &:hover {
+                    border-bottom : 3px solid #1AA152;
+                }
+                &--active {
+                    border-bottom : 3px solid #1AA152;
+                }
+            }
+        }
+        &__body {
+            padding: 30px 12px;
+            @media (min-width: $breaking-point) {
+                padding: 30px 37px;                
+            }
+        }
+    }
+}
+.settings-page {
+    max-width: 388px;
+    @media (max-width: 1200px) {
+        margin: 0 auto;
+    }
+    &__header-text {
+        font-size: 18px;
+        font-family: $app-font-bold;
+        margin-bottom: 10px;
+    }
+    &__input {
+        margin-top: 24px;
+        &__item {
+            margin-top: 20px;
+        }
+        &__label {
+            font-size: 12px;
+            color: #BFC7C5;
+            display: block;
+        }
+        &__key {
+            margin-top: 5px;
+        }
+    }
+    &__avatar {
+        display:flex;
+        margin-top: 11px;
+        &__image {
+            margin-right: 33px;
+        }
+        &__buttons {
+            padding-top: 8px;
+            button {
+                font-size: 13px;
+                font-family: $app-font-semi-bold;
+                margin-left: 16px;
+                padding: 8px;
+                @media (min-width: 500px) {
+                    font-family: $app-font-semi-bold;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+        }
+        img {
+            height: 72px;
+            width: 72px; 
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    &__button {
+        font-family: $app-font-bold;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,37 @@
+.retirements-details {
+    width: 90%;
+    margin: 0 auto;
+    &__header {
+        margin-bottom: 20px;
+        &__text {
+            font-size: 18px;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+    }
+    @media (min-width: $breaking-point) {
+        margin: 0px;
+    }
+    &__back-button {
+        color: #1AA152;
+        margin-bottom: 20px;
+        span {
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+    &__cards {
+        &__card {
+            width: 100%;
+            @media (min-width: $breaking-point) {
+                &:not(:last-of-type) {
+                    margin-right: 17px;
+                }
+            }
+        }
+        @media (min-width: $breaking-point) {
+            display: flex;
+            width: 100%;
+        }
+    }
+}

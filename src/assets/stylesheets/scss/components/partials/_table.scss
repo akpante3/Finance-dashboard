@@ -1,0 +1,148 @@
+.table {
+    width: 100%;
+    background-color: $white;
+    padding: 17px;
+    @media (min-width: $breaking-point) {
+        padding: 24px;        
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 22px;
+        border-bottom: 1px solid rgba(224, 224, 224, 0.674904);
+    }
+    &__list {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 14px;
+            padding-top: 25px;
+            &:not(:first-of-type) {
+                border-top: 1px solid rgba(224, 224, 224, 0.674904);
+            }
+            &--hover {
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+            &--mt {
+                margin-top: 15px;
+            }
+            &--multi-items {
+                @media (max-width: $breaking-point) {
+                    flex-direction: column
+                }
+            } 
+            &--pt-15 {
+                padding-top: 15px;
+            }
+            &__left {
+                  &--multi-items {
+                    @media (min-width: $breaking-point) {
+                        display: flex;
+                        width: 100%;
+                        // justify-content: flex-end;
+                        .table__list__item__left__item {
+                            &:not(:first-of-type) {
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                    .table__list__item__left__item {
+                        &:not(:first-of-type) {
+                            margin-top: 8px;
+                        }
+                    }
+                  }
+                &__item {
+                    &:not(:first-of-type) {
+                        margin-left: 0;
+                        @media (min-width: $breaking-point) {
+                            margin-left: 20%;
+                        }
+                    }  
+                }
+                &__bold-text {
+                    font-family: $app-font-bold;
+                    font-size: 15px;
+                    line-height: 1.2;
+                    &--mt-12 {
+                        margin-top: 12px;
+                    }
+                    &--grey {
+                        color: #8791A0
+                    }
+                }
+                &__small-text {
+                    display: none;
+                    font-size: 10.5px;
+                    line-height: 10px;
+                    color: #b3bbc6;
+                    display: block;
+                    &--hide-on-small-screen {
+                        display: none;
+                        @media (min-width: $breaking-point) {
+                            display: block;                        
+                        }
+                    }
+                }
+            }
+            &__right {
+                &__figures {
+                    font-family: $app-font-bold;
+                    color: #FF615C;
+                }
+                display: flex;
+                width: 50%;
+                justify-content: flex-end;
+                &--multi-items {
+                    @media (max-width: $breaking-point) {
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                }
+                &__small-text {
+                    font-size: 10.5px;
+                    line-height: 10px;
+                    color: #b3bbc6;
+                    display: block;
+                    &--hide-on-large-screen {
+                        display: block;
+                        @media (min-width: $breaking-point) {
+                            display: none;                        
+                        }
+                    }
+                }
+                &__item {
+                    &:not(:first-of-type) {
+                        margin-left: 0;
+                        @media (min-width: $breaking-point) {
+                            margin-left: 20%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__footer {
+        padding-top: 25px;
+        border-top: 1px solid rgba(224, 224, 224, 0.674904);
+        &__text {
+            font-family: $app-font-medium;
+            cursor: pointer;
+            font-weight: 400;
+            margin-right: 10px;
+            &--green {
+                color: $color-deep-green;
+            }
+            &--red {
+                color: #D04456;
+            }        
+            @media (max-width: $breaking-point) {
+                display: none;
+            } 
+        } 
+
+    }
+}

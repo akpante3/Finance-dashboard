@@ -1,0 +1,47 @@
+.side-bar {
+    display: block; 
+    height: 100%;
+    width: 280px; 
+    // background-color: white;    
+    @media (min-width: 1000px) {
+        width: 280px;      
+    }
+    &__links {
+        margin: 0 auto;
+        // margin-top: 65px;
+        position: fixed;
+        background-color: white;
+        height: 100%;
+        width: 226px; 
+    }
+    &__link {
+        padding: 14px 2px;
+        border-radius: 4px;
+        font-family: $app-font-bold;
+        cursor: pointer;
+        margin-bottom: 8px;
+        // padding: 11px 0px;
+        &__item {
+           width: 100%;
+           padding-left: 34px;
+        }
+        &:first-child {
+            margin-top: 110px;
+        }
+        &:hover {
+            background: rgba(26, 161, 82, 0.06);
+            color: $color-deep-green;
+        } 
+        &:hover &__item  {
+            border-left: 4px $color-deep-green solid; 
+        }
+
+    }
+    .active-bar-link {
+        background: rgba(26, 161, 82, 0.06);
+        color: $color-deep-green;
+        .side-bar__link__item {
+            border-left: 4px $color-deep-green solid;            
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.empty-transaction {
+    width: 100%;
+    text-align: center;
+    padding: 100px 30px;
+    &__header {
+        font-size: 29.7407px;
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 30px;
+        // margin-top: 118px;
+    }
+    &__text {
+        color: #677583;
+        font-size: 20.4321px;
+        letter-spacing: 0.180247px;
+    }
+}

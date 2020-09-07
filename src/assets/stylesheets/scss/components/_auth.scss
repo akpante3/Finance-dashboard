@@ -1,0 +1,58 @@
+// @import '../variable.scss';
+
+.auth {
+    &__text {
+        font-family: $app-font-regular;
+        color: $color-grey;
+        font-weight: 100;
+        margin-top: 16px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        &--header {
+            font-size: 26px;
+            line-height: 26px;
+            font-weight: 700;
+            font-family: $app-font-bold
+        }
+    }
+    &__success-message {
+        margin: 0 auto;
+        font-size: 20px;
+        margin-top: 20px;
+        font-family: $app-font-semi-bold;
+    }
+    &__auth-modal {
+        width: 90%;
+        max-width: 425px;
+        margin: 0 auto;
+        border-radius: 8px;
+        margin-top: 40px;
+    }
+    &__logo {
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+        img {
+            width: 143px;
+        }
+    }
+    &__forgot-password-link {
+        font-size: 16px;
+        float: left;
+        margin-top: 9px;
+        color: #1AA152;
+        cursor: pointer;
+    }
+    &__footer {
+        margin-top: 41px;
+        display: flex;
+        justify-content: space-evenly;
+        div {
+            width: 100%;
+        }
+    }
+}
+.auth-content {
+    max-width: 375px;
+    margin: 0 auto;
+}
